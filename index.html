@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 style="color:gray; margin-left: 430px; margin-top: 70px; font-family: Verdana, Geneva, Tahoma, sans-serif;">Form</h1>
+        </div>
+    </header>
+  
+        <form name="biodata" action="" onsubmit="return validateForm()" style="margin-left: 430px; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <div style="margin-top: 20px;">
+                    <label for="Name">Name</label>
+                    <input name="name" class="input" type="text" style="margin-left: 87px;" >
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="Email">Email</label>
+                    <input name="email" class="input" type="email" style="margin-left: 90px;" >
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="mbno">Contact Number</label>
+                    <input name="number" pattern="[1-9]{1}[0-9]{9}" class="input" type="text" style="margin-left: 2px;" >
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" name="date" id="date" placeholder="DD/MM/YYYY" onkeyup="checkDate()" / style="margin-left: 30px;">
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="Gender">Gender</label>
+                    <input name="gender" type="radio" id="male" name="gender" value="male" style="margin-left: 80px;" >
+                    <label for="Gender">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="Gender">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="Gender">Other</label>
+                </div>
+                <div style="margin-top: 20px;">
+                    <label for="%">Total Mark(in %)</label>
+                    <input name="marks" class="input" type="number" style="margin-left: 4px;" >
+                </div>
+              
+                <div style="margin-top: 30px; color: white; ">
+                    <a href="form.html"><button class="button" style="font-family: Verdana, Geneva, Tahoma, sans-serif;  text-decoration-color: white;" type="submit" >SUBMIT</button></a>
+                    <a href="view.html" style="margin-left: 10px;"><button class="button" style="font-family: Verdana, Geneva, Tahoma, sans-serif;  text-decoration-color: white;" type="reset">RESET</button></a>
+                    
+                </div>
+        </form>
+    </div>
+    <section style="margin-top: 20px;">
+        <div>
+            <img src="images/gillu1.png" style="margin-left: 430px;" alt="">
+        </div>
+        
+    </section>
+    
+</body>
+</html>
